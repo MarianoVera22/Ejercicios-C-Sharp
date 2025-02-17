@@ -1,0 +1,14 @@
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\bin\Debug\net8.0\C#_Basic.exe
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\bin\Debug\net8.0\C#_Basic.deps.json
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\bin\Debug\net8.0\C#_Basic.runtimeconfig.json
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\bin\Debug\net8.0\C#_Basic.dll
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\bin\Debug\net8.0\C#_Basic.pdb
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\obj\Debug\net8.0\C#_Basic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\obj\Debug\net8.0\C#_Basic.AssemblyInfoInputs.cache
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\obj\Debug\net8.0\C#_Basic.AssemblyInfo.cs
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\obj\Debug\net8.0\C#_Basic.csproj.CoreCompileInputs.cache
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\obj\Debug\net8.0\C#_Basic.dll
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\obj\Debug\net8.0\refint\C#_Basic.dll
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\obj\Debug\net8.0\C#_Basic.pdb
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\obj\Debug\net8.0\C#_Basic.genruntimeconfig.cache
+C:\Users\Mariano\source\repos\C#_Basic\C#_Basic\obj\Debug\net8.0\ref\C#_Basic.dll
