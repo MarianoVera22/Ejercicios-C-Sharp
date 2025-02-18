@@ -602,23 +602,83 @@
 //    }
 //}
 
-using System;
-using System.Collections.Generic;
-using System.IO;
-public class Excercise31
-{
-    public static void Main(string[] args)
-    {
-        int[] first_array = { 1, 3, -5, 4 };
-        int[] second_array = { 1, 4, -5, -2 };
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//public class Excercise31
+//{
+//    public static void Main(string[] args)
+//    {
+//        int[] first_array = { 1, 3, -5, 4 };
+//        int[] second_array = { 1, 4, -5, -2 };
 
-        Console.WriteLine("\n |{0}  {1}| \n |{2}  {3}|\n", first_array[0], first_array[1], first_array[2], first_array[3]);
-        Console.WriteLine("\n |{0}  {1}| \n |{2}  {3}|\n", second_array[0], second_array[1], second_array[2], second_array[3]);
+//        Console.WriteLine("\n |{0}  {1}| \n |{2}  {3}|\n", first_array[0], first_array[1], first_array[2], first_array[3]);
+//        Console.WriteLine("\n |{0}  {1}| \n |{2}  {3}|\n", second_array[0], second_array[1], second_array[2], second_array[3]);
 
-        for (int i = 0; i < first_array.Length; i++) 
-        {
-            Console.Write( first_array[i] * second_array[i] + " ");
-        }
+//        for (int i = 0; i < first_array.Length; i++) 
+//        {
+//            Console.Write( first_array[i] * second_array[i] + " ");
+//        }
 
-    }
-}
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise32
+//{
+//    public static void Main(string[] args)
+//    {
+//        string str;
+
+//        Console.Write("Input a string: ");
+//        str = Console.ReadLine();
+
+//        if (str.Length > 4)
+//        {
+//            Console.WriteLine(str.Length < 4 ? str + str + str + str : str.Substring(str.Length - 4) + str.Substring(str.Length - 4) + str.Substring(str.Length - 4) + str.Substring(str.Length - 4));
+//        }
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise33
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.Write("\nInput the number: ");
+//        int num1 = Convert.ToInt32(Console.ReadLine());
+
+//        if (num1 > 0) {
+//            Console.WriteLine(num1 % 3 == 0 || num1 % 7 == 0);
+//        }
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise34
+//{
+//    public static void Main(string[] args)
+//    {
+//        string str;
+
+//        Console.Write("Input a string: ");
+//        str = Console.ReadLine();
+
+//        Console.WriteLine((str.Length < 7 && str.Equals("Buenas")) || (str.StartsWith("Buenas") && str[6] == ' '));
+//    }
+//}

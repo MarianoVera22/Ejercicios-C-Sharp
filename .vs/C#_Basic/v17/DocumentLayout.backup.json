@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\",
+  "WorkspaceRootPath": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\Ejercicios-C-Sharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3AC6687D-68E9-4736-9463-B5DC97ECB02A}|C#_Basic\\C#_Basic.csproj|c:\\users\\mariano\\source\\repos\\c#_basic\\c#_basic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AC6687D-68E9-4736-9463-B5DC97ECB02A}|C#_Basic\\C#_Basic.csproj|c:\\users\\mariano\\source\\repos\\c#_basic\\ejercicios-c-sharp\\c#_basic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AC6687D-68E9-4736-9463-B5DC97ECB02A}|C#_Basic\\C#_Basic.csproj|solutionrelative:c#_basic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\C#_Basic\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\Ejercicios-C-Sharp\\C#_Basic\\Program.cs",
               "RelativeDocumentMoniker": "C#_Basic\\Program.cs",
-              "ToolTip": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\C#_Basic\\Program.cs",
-              "RelativeToolTip": "C#_Basic\\Program.cs",
-              "ViewState": "AgIAAEwCAAAAAAAAAAApwGECAAAqAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\Ejercicios-C-Sharp\\C#_Basic\\Program.cs*",
+              "RelativeToolTip": "C#_Basic\\Program.cs*",
+              "ViewState": "AgIAAJICAAAAAAAAAAAmwKsCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T12:52:43.999Z",
               "EditorCaption": ""

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\C#_Basic\\C#_Basic.csproj",
+      "projectUniqueName": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\Ejercicios-C-Sharp\\C#_Basic\\C#_Basic.csproj",
       "projectName": "C#_Basic",
-      "projectPath": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\C#_Basic\\C#_Basic.csproj",
+      "projectPath": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\Ejercicios-C-Sharp\\C#_Basic\\C#_Basic.csproj",
       "packagesPath": "C:\\Users\\Mariano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\C#_Basic\\obj\\",
+      "outputPath": "C:\\Users\\Mariano\\source\\repos\\C#_Basic\\Ejercicios-C-Sharp\\C#_Basic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
