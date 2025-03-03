@@ -682,3 +682,79 @@
 //        Console.WriteLine((str.Length < 7 && str.Equals("Buenas")) || (str.StartsWith("Buenas") && str[6] == ' '));
 //    }
 //}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise35
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.Write("\nInput the first number: ");
+//        int num1 = Convert.ToInt32(Console.ReadLine());
+
+//        Console.Write("\nInput the second number: ");
+//        int num2 = Convert.ToInt32(Console.ReadLine());
+
+//        Console.WriteLine( num1 < 100 && num2 > 200);
+
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise36
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.Write("\nInput the first number: ");
+//        int num1 = Convert.ToInt32(Console.ReadLine());
+
+//        Console.Write("\nInput the second number: ");
+//        int num2 = Convert.ToInt32(Console.ReadLine());
+
+//        Console.WriteLine((num1 >= - 10 && num1 <= 10)&& (num2 >= -10 && num2 <= 10));
+
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise37
+//{
+//    public static void Main(string[] args)
+//    {
+//        string str = "PHP Tutorial";
+
+//        Console.WriteLine(str.Substring(1, 2).Equals("HP") ? str.Remove(1, 2) : str);
+
+//    }
+//}
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+public class Excercise38
+{
+    public static void Main(string[] args)
+    {
+        string str = "PHP Tutorial";
+
+        Console.WriteLine(str.Substring(1, 2).Equals("HP") ? str.Remove(1, 2) : str);
+
+    }
+}
