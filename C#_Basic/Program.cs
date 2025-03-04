@@ -742,19 +742,194 @@
 //    }
 //}
 
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise38
+//{
+//    public static void Main(string[] args)
+//    {
+//        string str = "PHP Tutorial";
+//        var res = "";
+
+//        if (str.Length >= 1 && str[0] == 'P') {
+//            res += str[0];
+//        }
+
+//        if (str.Length >= 2 && str[1] == 'H')
+//        {
+//            res += str[1];
+//        }
+
+//        Console.WriteLine(res);
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise39
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.Write("\nInput the first number: ");
+//        int num1 = Convert.ToInt32(Console.ReadLine());
+
+//        Console.Write("\nInput the second number: ");
+//        int num2 = Convert.ToInt32(Console.ReadLine());
+
+//        Console.Write("\nInput the second number: ");
+//        int num3 = Convert.ToInt32(Console.ReadLine());
+
+//        Console.WriteLine("Largest of three: " + Math.Max(num1, Math.Max(num2, num3)));
+//        Console.WriteLine("Largest of three: " + Math.Min(num1, Math.Min(num2, num3)));
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise40
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.Write("\nInput the first number: ");
+//        int num1 = Convert.ToInt32(Console.ReadLine());
+
+//        Console.Write("\nInput the second number: ");
+//        int num2 = Convert.ToInt32(Console.ReadLine());
+
+//        var res1 = Math.Abs(num1 - 20);
+//        var res2 = Math.Abs(num2 - 20);
+
+//        Console.WriteLine(res1==res2 ? 0 : (res1 < res2 ? num1 : num2));
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise41
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.Write("Input a string: ");
+//        string str = Console.ReadLine();
+
+//        var count = str.Count(i => i == 'w');
+
+//        Console.WriteLine(count >= 1 && count <= 3);
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise42
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.Write("Input a string: ");
+//        string str = Console.ReadLine();
+
+//        if (str.Length < 4) {
+//            Console.WriteLine(str.ToUpper());
+//        }
+//        else {
+//            Console.WriteLine(str.Substring(0, 4).ToLower() + str.Substring(4, str.Length-4));
+//        }
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise43
+//{
+//    public static void Main(string[] args)
+//    { 
+//        Console.Write("Input a string: ");
+//        string str = Console.ReadLine();
+
+//        Console.WriteLine(test(str));
+
+//    }
+
+//    public static bool test(string str) {
+//        var w = 0;
+
+//        for (var i = 0; i < str.Length - 1; i++) {
+//            if (str[i].Equals('w')) {
+//                w++;
+//            }
+//            if (str.Substring(i, 2).Equals("ww") && w > 2) {
+//                return true;
+//            }
+//        }
+
+//        return false;
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise44
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.Write("Input a string: ");
+//        string str = Console.ReadLine();
+
+//        var res = string.Empty;
+
+//        for (var i = 0; i < str.Length; i++) {
+//            if (i % 2 == 0)
+//            {
+//                res += str[i];
+//            }
+//        }
+
+//        Console.WriteLine(res);
+//    }
+//}
+
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-public class Excercise38
+public class Excercise45
 {
     public static void Main(string[] args)
     {
-        string str = "PHP Tutorial";
+        Console.Write("\nInput the number: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine(str.Substring(1, 2).Equals("HP") ? str.Remove(1, 2) : str);
+        int[] nums = { 4, 5, 6, 8, 63, 12, 2, 34, 5, 6, 7, 8, 9 };
 
+        Console.WriteLine(nums.Count(n => n == num1));
     }
 }
