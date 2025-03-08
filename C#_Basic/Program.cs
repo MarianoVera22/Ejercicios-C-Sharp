@@ -915,21 +915,251 @@
 //    }
 //}
 
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise45
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.Write("\nInput the number: ");
+//        int num1 = Convert.ToInt32(Console.ReadLine());
+
+//        int[] nums = { 4, 5, 6, 8, 63, 12, 2, 34, 5, 6, 7, 8, 9 };
+
+//        Console.WriteLine(nums.Count(n => n == num1));
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise46
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.Write("\nInput the number: ");
+//        int num1 = Convert.ToInt32(Console.ReadLine());
+
+//        int[] nums = { 4, 5, 6, 8, 63, 12, 2, 34, 5, 6, 7, 8, 9 };
+
+//        Console.WriteLine((nums[0]==num1)||(nums[nums.Length-1] == num1));
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise47
+//{
+//    public static void Main(string[] args)
+//    {
+//        var res = 0;
+
+//        int[] nums = { 4, 5, 6, 8, 63, 12, 2, 34, 5, 6, 7, 8, 9 };
+
+//        for (var i = 0; i < nums.Length; i++) {
+//            Console.WriteLine("\n{0}", nums[i]);
+//            res += nums[i];
+//        }
+
+//        Console.WriteLine("\n\nSum: " + res);
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise48
+//{
+//    public static void Main(string[] args)
+//    {
+
+
+//        int[] nums = { 4, 5, 6, 8, 63, 12, 2, 34, 5, 6, 7, 8, 4 };
+
+//        Console.WriteLine((nums.Length >= 1) && (nums[0].Equals(nums[nums.Length-1])));
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise49
+//{
+//    public static void Main(string[] args)
+//    {
+//        int[] nums1 = { 4, 5, 6, 8, 63, 12, 2, 34, 5, 6, 7, 8, 4 };
+//        int[] nums2 = { 4, 5, 6, 8, 1 };
+
+//        Console.WriteLine((nums1[0].Equals(nums2[0])) || (nums1[nums1.Length - 1].Equals(nums2[nums2.Length-1])));
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise50
+//{
+//    public static void Main(string[] args)
+//    {
+//        int[] nums = { 9, 7, 8 };
+//        var val = nums[0];
+
+//        for (var i = 0; i < nums.Length - 1; i++)
+//        {
+//            nums[i] = nums[i + 1];
+//        }
+
+//        nums[nums.Length - 1] = val;
+
+//        Console.WriteLine("Rotate array: {0}",string.Join(", ",nums));
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise51
+//{
+//    public static void Main(string[] args)
+//    {
+//        int[] nums = { 2, 2, 9, 7, 8 };
+//        var val = nums[0];
+
+//        for (var i=0;i<nums.Length;i++)
+//        {
+//            if (nums[i] > nums[0]) {
+//                val = nums[i];
+//            }
+//        }
+
+//        Console.WriteLine("Highest value: {0}", val);
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise52
+//{
+//    public static void Main(string[] args)
+//    {
+//        int[] nums1 = { 2, 1, 9};
+//        int[] nums2 = { 2, 2, 9 };
+//        int[] nums3 = { 2, 3, 9 };
+
+//        int[] num4 = { nums1[1], nums2[1], nums3[1] };
+//        Console.WriteLine("\nNew array: [{0}]",string.Join(", ",num4));
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise53
+//{
+//    public static void Main(string[] args)
+//    {
+//        int[] nums = { 2, 1, 9, 8, 6 };
+//        Console.WriteLine("Check if an array contains an odd number? " + even_odd(nums));
+//    }
+
+//    public static bool even_odd(int[] nums)
+//    {
+//        foreach (var n in nums)
+//        {
+//            if (n % 2 != 0)
+//            {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise54
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(centuryFromYear(1799)==18);
+//        Console.WriteLine(centuryFromYear(1900) == 19);
+//        Console.WriteLine(centuryFromYear(1901) == 19);
+//        Console.WriteLine(centuryFromYear(1901) == 20);
+//        Console.WriteLine(centuryFromYear(1806) == 19);
+//        Console.WriteLine(centuryFromYear(1568) == 20);
+//        Console.WriteLine(centuryFromYear(2010) == 21);
+//    }
+
+//    public static int centuryFromYear(int year)
+//    {
+//        return (int)(year / 100) + ((year % 100 == 0) ? 0 : 1);
+//    }
+//}
+
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-public class Excercise45
+public class Excercise55
 {
     public static void Main(string[] args)
     {
-        Console.Write("\nInput the number: ");
-        int num1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(centuryFromYear(1799) == 18);
+        Console.WriteLine(centuryFromYear(1900) == 19);
+        Console.WriteLine(centuryFromYear(1901) == 19);
+        Console.WriteLine(centuryFromYear(1901) == 20);
+        Console.WriteLine(centuryFromYear(1806) == 19);
+        Console.WriteLine(centuryFromYear(1568) == 20);
+        Console.WriteLine(centuryFromYear(2010) == 21);
+    }
 
-        int[] nums = { 4, 5, 6, 8, 63, 12, 2, 34, 5, 6, 7, 8, 9 };
-
-        Console.WriteLine(nums.Count(n => n == num1));
+    public static int centuryFromYear(int year)
+    {
+        return (int)(year / 100) + ((year % 100 == 0) ? 0 : 1);
     }
 }
