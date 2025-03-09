@@ -1137,29 +1137,128 @@
 //    }
 //}
 
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise55
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(array_product(new int[] { 2, 4, 2, 6, 9, 3 }) == 27);
+//        Console.WriteLine(array_product(new int[] { 0, -1, -1, -2 }) == 2);
+//        Console.WriteLine(array_product(new int[] { 6, 1, 12, 3, 1, 4 }) == 36);
+//        Console.WriteLine(array_product(new int[] { 1, 4, 3, 0 }) == 16);
+//    }
+
+//    public static int array_product(int[] array )
+//    {
+//        int index = 0;
+//        int product = array[index] * array[index + 1];
+
+//        index++;
+
+//        while (index + 1 < array.Length) {
+//            product = ((array[index] * array[index + 1]) > product) ? (array[index] * array[index + 1]) : product;
+//            index++;
+//        }
+
+//        return product;
+
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise56
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(capicua("aaa"));    
+//        Console.WriteLine(capicua("abc"));    
+//        Console.WriteLine(capicua("madam"));  
+//        Console.WriteLine(capicua("1234"));
+//    }
+
+//    public static bool capicua(string inputString)
+//    {
+//        char[] c = inputString.ToCharArray();
+
+//        Array.Reverse(c);
+
+//        return new string(c).Equals(inputString);
+
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise57
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(array_product(new int[] { 2, 4, 2, 6, 9, 3 }));
+//        Console.WriteLine(array_product(new int[] { 0, -1, -1, -2 }));
+//        Console.WriteLine(array_product(new int[] { 6, 1, 12, 3, 1, 4 }));
+//        Console.WriteLine(array_product(new int[] { 1, 4, 3, 0 }));
+//    }
+
+//    public static int array_product(int[] array)
+//    {
+//        int max = array[0] * array[1];
+
+//        for (int i = 1; i <= array.Length-2; i++) {
+//            max = Math.Max(max, array[i] * array[i + 1]);
+//        }
+
+//        return max;
+//    }
+//}
+
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-public class Excercise55
+public class Excercise58
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine(centuryFromYear(1799) == 18);
-        Console.WriteLine(centuryFromYear(1900) == 19);
-        Console.WriteLine(centuryFromYear(1901) == 19);
-        Console.WriteLine(centuryFromYear(1901) == 20);
-        Console.WriteLine(centuryFromYear(1806) == 19);
-        Console.WriteLine(centuryFromYear(1568) == 20);
-        Console.WriteLine(centuryFromYear(2010) == 21);
+        Console.WriteLine(consecutive(new int[] { 1, 3, 5, 6, 9 })); 
+        Console.WriteLine(consecutive(new int[] { 0, 10 })); 
     }
 
-    public static int centuryFromYear(int year)
+    public static int consecutive(int[] array)
     {
-        return (int)(year / 100) + ((year % 100 == 0) ? 0 : 1);
+        Array.Sort(array);
+
+        int missing_num = 0;
+
+        for (int i = 0; i < array.Length - 1; i++) {
+            missing_num += array[i + 1] - array[i] - 1;
+        }
+
+        return missing_num;
     }
 }
