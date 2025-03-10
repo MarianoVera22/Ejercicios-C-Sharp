@@ -1232,6 +1232,71 @@
 //    }
 //}
 
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise58
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(consecutive(new int[] { 1, 3, 5, 6, 9 })); 
+//        Console.WriteLine(consecutive(new int[] { 0, 10 })); 
+//    }
+
+//    public static int consecutive(int[] array)
+//    {
+//        Array.Sort(array);
+
+//        int missings_nums = 0;
+
+//        for (int i = 0; i < array.Length - 1; i++) {
+//            missings_nums += array[i + 1] - array[i] - 1;
+//        }
+
+//        return missings_nums;
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//public class Excercise59
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(Increasing_Sequence(new int[] { 1, 3, 5, 6, 9 }));
+//        Console.WriteLine(Increasing_Sequence(new int[] { 0, 10 }));
+//        Console.WriteLine(Increasing_Sequence(new int[] { 1, 3, 1, 3 }));
+//    }
+
+//    public static bool Increasing_Sequence(int[] array)
+//    {
+//        int n = 0;
+
+//        for (int i = 0; i < array.Length - 1; i++) {
+//            if (array[i] >= array[i + 1]) {
+//                n++;
+//            }
+//            if (i + 2 < array.Length && array[i] >= array[i + 2]) {
+//                n++;
+//            }
+//        }
+//        return n <= 2;
+//    }
+//}
+
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -1241,24 +1306,43 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-public class Excercise58
+public class Excercise60
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine(consecutive(new int[] { 1, 3, 5, 6, 9 })); 
-        Console.WriteLine(consecutive(new int[] { 0, 10 })); 
+        Console.WriteLine(sum_matrix_elements(
+            new int[][] {
+                new int[]{0, 2, 3, 2},
+                new int[]{0, 6, 0, 1},
+                new int[]{4, 0, 3, 0}
+            }));
+
+        Console.WriteLine(sum_matrix_elements(
+             new int[][] {
+                new int[]{1, 2, 1, 0 },
+                new int[]{0, 5, 0, 0},
+                new int[]{1, 1, 3, 10 }
+             }));
+
+        Console.WriteLine(sum_matrix_elements(
+            new int[][] {
+                new int[]{1, 1},
+                new int[]{2, 2},
+                new int[]{3, 3},
+                new int[]{4, 4}
+            }));
     }
 
-    public static int consecutive(int[] array)
+    public static int sum_matrix_elements(int[][] matrix)
     {
-        Array.Sort(array);
+        int sum = 0;
 
-        int missing_num = 0;
-
-        for (int i = 0; i < array.Length - 1; i++) {
-            missing_num += array[i + 1] - array[i] - 1;
+        for (int i = 0; i < matrix[0].Length; i++) {
+            for (int j = 0; j < matrix.Length && matrix[j][i] > 0; j++) {
+                sum += matrix[j][i];
+            }
         }
 
-        return missing_num;
+        return sum;
     }
 }
