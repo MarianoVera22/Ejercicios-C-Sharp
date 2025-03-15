@@ -1348,6 +1348,243 @@
 //}
 
 
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise61
+//{
+//    public static void Main(string[] args)
+//    {
+
+//        int[] x = sort_numbers(new int[] { -5, 236, 120, 70, -5, -5, 698, 280 });
+
+
+//        foreach (var item in x)
+//        {
+//            Console.WriteLine(item.ToString());
+//        }
+//    }
+//    public static int[] sort_numbers(int[] array)
+//    {
+//        int[] num = array.Where(x => x != -5).OrderBy(x => x).ToArray();
+
+//        int ctr = 0;
+
+//        return array.Select(x => x >= 0 ? num[ctr++] : -5).ToArray();
+//    }
+//}
+
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise62
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(reverse_parentheses("p(rq)st"));
+//        Console.WriteLine(reverse_parentheses("(p(rq)st)"));
+//        Console.WriteLine(reverse_parentheses("ab(cd(ef)gh)ij"));
+//    }
+//    public static string reverse_parentheses(string str)
+//    {
+//        int lid = str.LastIndexOf('(');
+
+//        if (lid == -1)
+//        {
+//            return str;
+//        }
+//        else {
+//            int rid = str.IndexOf(')', lid);
+
+//            return reverse_parentheses(str.Substring(0,lid)+new string(str.Substring(lid+1,rid-lid-1).Reverse().ToArray())+str.Substring(rid+1));
+//        }
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise63
+//{
+//    public static void Main(string[] arg)
+//    {
+//        int[] nums = { 1, 3, 5, 7, 9 };
+
+//        Console.WriteLine(test_num(nums, 1));
+//        Console.WriteLine(test_num(nums, 2));
+//        Console.WriteLine(test_num(nums, 6));
+
+//    }
+//    public static bool test_num(int[] nums, int num)
+//    {
+//        return nums.Contains(num);
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise64
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(test_text_of_path("c:/csharp/ex/test.cpp"));
+//        Console.WriteLine(test_text_of_path("c:/movies/abc.mp4"));
+//        Console.WriteLine(test_text_of_path("c:/movies/abc.mp4"));
+//    }
+//    public static string test_text_of_path(string file_path)
+//    {
+//        return file_path.Split('/').Last();
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise65
+//{
+//    public static void Main(string[] args)
+//    {
+//        int[] nums = { 1, 3, 5, 7, 9 };
+//        int[] nums2 = multiply_array(nums);
+
+//        Array.ForEach(nums2, Console.WriteLine);
+//    }
+//    public static int[] multiply_array(int[] array)
+//    {
+//        return array.Select(el=> el*array.Length).ToArray(); 
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise66
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(min_value("12", "43"));
+//        Console.WriteLine(min_value("52", "43"));
+//    }
+//    public static string min_value(string str1, string str2)
+//    {
+//        return Int32.Parse(str1)>Int32.Parse(str2) ? str2 : str1;
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise67
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(code("PHP")); 
+//        Console.WriteLine(code("JAVASCRIPT"));
+//    }
+//    public static string code(string str)
+//    {
+//        return str.Replace("P", "9").Replace("T", "0").Replace("S","1").Replace("H","6").Replace("A","8");
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise68
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(count_char("PHP Exercises", 'E', 'e')); 
+//        Console.WriteLine(count_char("Latest News, Breaking News LIVE", 'A', 'a'));
+//    }
+//    public static int count_char(string str, char uc, char lc)
+//    {
+//        return str.Split(uc, lc).Length - 1;
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise69
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine(check_up_lo("PHP")); 
+//        Console.WriteLine(check_up_lo("python")); 
+//        Console.WriteLine(check_up_lo("JavaScript")); 
+//    }
+//    public static bool check_up_lo(string str)
+//    {
+//        return str==str.ToUpper() || str==str.ToLower();
+//    }
+//}
+
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -1357,17 +1594,22 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-public class Excercise61
+using static System.Runtime.InteropServices.JavaScript.JSType;
+public class Excercise70
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine(reverse_parentheses("p(rq)st"));       
-        Console.WriteLine(reverse_parentheses("(p(rq)st)"));     
-        Console.WriteLine(reverse_parentheses("ab(cd(ef)gh)ij"));
-    }
+        Console.WriteLine("Original string: PHP");
+        Console.WriteLine("After removing first and last elements: " + reduce("PHP"));
 
-    public static string reverse_parentheses(string str)
+        Console.WriteLine("Original string: Python");
+        Console.WriteLine("After removing first and last elements: " + reduce("Python"));
+
+        Console.WriteLine("Original string: JavaScript");
+        Console.WriteLine("After removing first and last elements: " + reduce("JavaScript"));
+    }
+    public static string reduce(string str)
     {
-        
+        return str.Length > 2 ? str.Substring(1, str.Length - 2) : str;
     }
 }
