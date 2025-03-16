@@ -1585,8 +1585,219 @@
 //    }
 //}
 
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise70
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine("Original string: PHP");
+//        Console.WriteLine("After removing first and last elements: " + reduce("PHP"));
+
+//        Console.WriteLine("Original string: Python");
+//        Console.WriteLine("After removing first and last elements: " + reduce("Python"));
+
+//        Console.WriteLine("Original string: JavaScript");
+//        Console.WriteLine("After removing first and last elements: " + reduce("JavaScript"));
+//    }
+//    public static string reduce(string str)
+//    {
+//        return str.Length > 2 ? str.Substring(1, str.Length - 2) : str;
+//    }
+//}
+
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise71
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine("Original string: PHP");
+//        Console.WriteLine("Test for consecutive similar letters! " + consecutive("PHP"));
+
+//        Console.WriteLine("Original string: PHHP");
+//        Console.WriteLine("Test for consecutive similar letters! " + consecutive("PHHP"));
+
+//        Console.WriteLine("Original string: PHPP");
+//        Console.WriteLine("Test for consecutive similar letters! " + consecutive("PHPP"));
+
+//        Console.WriteLine("Original string: PPHP");
+//        Console.WriteLine("Test for consecutive similar letters! " + consecutive("PPHP"));
+//    }
+//    public static bool consecutive(string str)
+//    {
+//        for (int i = 0; i < str.Length - 1; i++)
+//        {
+//            if (str[i] == str[i + 1])
+//            {
+//                return true;
+//            }
+
+//        }
+//        return false;
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise72
+//{
+//    public static void Main(string[] args)
+//    {
+//        int[] nums1 = { 1, 2, 3, 5, 4, 2, 3, 4 };
+//        Console.WriteLine("Check the average value of the said array is a whole number or not: " + average(nums1));
+
+//        int[] nums2 = { 2, 4, 2, 6, 4, 8 };
+//        Console.WriteLine("Check the average value of the said array is a whole number or not: " + average(nums2));
+//    }
+//    public static bool average(int[] nums)
+//    {
+//        return nums.Average() % 1 == 0;
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise73
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine("Original string: PHP");
+//        Console.WriteLine("Convert the letters of the said string into alphabetical order: " + order_alphabetic("PHP"));
+
+//        Console.WriteLine("Original string: javascript");
+//        Console.WriteLine("Convert the letters of the said string into alphabetical order: " + order_alphabetic("javascript"));
+
+//        Console.WriteLine("Original string: python");
+//        Console.WriteLine("Convert the letters of the said string into alphabetical order: " + order_alphabetic("python"));
+//    }
+//    public static string order_alphabetic(string str)
+//    {
+//        return new string(str.OrderBy(x => x).ToArray());
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Diagnostics.Tracing;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise74
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine("Original string: PHP");
+//        Console.WriteLine("Length of the string: " + odd_or_even("PHP"));
+
+//        Console.WriteLine("Original string: javascript");
+//        Console.WriteLine("Length of the string: " + odd_or_even("javascript"));
+
+//        Console.WriteLine("Original string: python");
+//        Console.WriteLine("Length of the string: " + odd_or_even("python"));
+//    }
+//    public static string odd_or_even(string str)
+//    {
+//        if (str.Length % 2 == 0) {
+//            return "Even length";
+//        }
+//        return "Odd lenght";
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Diagnostics.Tracing;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise75
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine("1st odd number: " + nth_odd_number(1));
+//        Console.WriteLine("2nd odd number: " + nth_odd_number(2));
+//        Console.WriteLine("4th odd number: " + nth_odd_number(4));
+//        Console.WriteLine("100th odd number: " + nth_odd_number(100));
+//    }
+//    public static int nth_odd_number(int n)
+//    {
+//        return n * 2 - 1;
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+//using System.Diagnostics.Tracing;
+//using System.Globalization;
+//using System.IO;
+//using System.Linq;
+//using System.Runtime.InteropServices;
+//using System.Security.Cryptography.X509Certificates;
+//using System.Text;
+//using System.Threading.Tasks;
+//using static System.Runtime.InteropServices.JavaScript.JSType;
+//public class Excercise76
+//{
+//    public static void Main(string[] args)
+//    {
+//        Console.WriteLine("Ascii value of 1 is: " + ASCII('1'));
+//        Console.WriteLine("Ascii value of A is: " + ASCII('A'));
+//        Console.WriteLine("Ascii value of a is: " + ASCII('a'));
+//        Console.WriteLine("Ascii value of # is: " + ASCII('#'));
+//    }
+//    public static int ASCII(char ch)
+//    {
+//        return (int)ch;
+//    }
+//}
+
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -1595,21 +1806,17 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-public class Excercise70
+public class Excercise77
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Original string: PHP");
-        Console.WriteLine("After removing first and last elements: " + reduce("PHP"));
-
-        Console.WriteLine("Original string: Python");
-        Console.WriteLine("After removing first and last elements: " + reduce("Python"));
-
-        Console.WriteLine("Original string: JavaScript");
-        Console.WriteLine("After removing first and last elements: " + reduce("JavaScript"));
+        Console.WriteLine("Is 'Exercise' plural? " + plural("Exercise"));
+        Console.WriteLine("Is 'Exercises' plural? " + plural("Exercises"));
+        Console.WriteLine("Is 'Books' plural? " + plural("Books"));
+        Console.WriteLine("Is 'Book' plural? " + plural("Book"));
     }
-    public static string reduce(string str)
+    public static bool plural(string str)
     {
-        return str.Length > 2 ? str.Substring(1, str.Length - 2) : str;
+        return str.EndsWith('s');
     }
 }
